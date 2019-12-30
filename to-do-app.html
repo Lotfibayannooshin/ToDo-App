@@ -1,7 +1,44 @@
 <!DOCTYPE html>
-<head>
 
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>to-do-list app</title>
+    <link rel="stylesheet" type="text/css" href="to-do-app.css" />
+    <script src="to-do-app.js"></script>
 </head>
+
 <body>
-    
+    <div class="main-container">
+        <div class="Main-header">
+            <h1>List Your Works!</h1>
+        </div>
+        <div class="Main-app">
+            <div class="input-container">
+                <div class="header-input">
+                    <h2>New ToDo: </h2>
+                </div>
+                <div class="to-do-input">
+                    <input id="todo-input" type="text" placeholder=" Add new work here" />
+                </div>
+                <div class="add-container">
+                    <button id="add" class="plus" type="button" onclick="additem()">
+                        Add
+                    </button>
+                </div>
+            </div>
+            <div class="list-container">
+                <div class="header-list">
+                    <h2>ToDo list:
+                    </h2>
+                </div>
+                <div class="li-container">
+                    <div id="list-title"></div>
+                    <ul class="to-do-li" id="to-do">
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
 </body>
