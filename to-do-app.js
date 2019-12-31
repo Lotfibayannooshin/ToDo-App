@@ -18,5 +18,6 @@ function additem() {
         listitem.appendChild(todo);
         x = "";
         document.getElementById('list-title').innerHTML = "";
+        document.getElementById('todo-input').value = "";
     }
 }
